@@ -1,12 +1,81 @@
-# React + Vite
+# Todo Application with React Context
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Todo application built with React, utilizing Context API for state management and TailwindCSS for styling.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create new todos
+- Edit existing todos
+- Mark todos as complete/incomplete
+- Delete todos
+- Persistent storage using localStorage
+- Clean and responsive UI
+- Real-time updates
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- TailwindCSS
+- Context API for state management
+- LocalStorage for data persistence
+
+## 🏗️ Project Structure
+
+```
+todoContext/
+├── src/
+│   ├── components/
+│   │   ├── TodoForm.jsx
+│   │   ├── TodoItem.jsx
+│   │   └── index.js
+│   ├── contexts/
+│   │   ├── TodoContext.js
+│   │   └── index.js
+│   ├── App.jsx
+│   └── main.jsx
+```
+
+## 🚦 Getting Started
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+## 💻 Usage
+
+- Add a new todo by typing in the input field and pressing the "+" button
+- Edit a todo by clicking the "✏️" button
+- Mark a todo as complete by checking the checkbox
+- Delete a todo by clicking the "❌" button
+
+## 🔋 State Management
+
+The application uses React's Context API for state management. The main context (`TodoContext`) provides the following functions:
+
+- `addTodo`: Add a new todo
+- `updateTodo`: Update an existing todo
+- `deleteTodo`: Remove a todo
+- `toggleComplete`: Toggle the completion status of a todo
+
+## 🎨 Styling
+
+The application uses TailwindCSS for styling, providing a clean and responsive design that works across different screen sizes.
+
+## 🏃‍♂️ Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
